@@ -20,32 +20,45 @@ class ViewController: UIViewController {
     @IBOutlet var sliderGreenValue: UISlider!
     @IBOutlet var sliderBlueValue: UISlider!
     
-    
+    var red: CGFloat = 0.0
+    var green: CGFloat = 0.0
+    var blue: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
+        colorView.backgroundColor = .systemGray
         
         valueRed.text = String(sliderRedValue.value)
         valueBlue.text = String(sliderBlueValue.value)
         valueGreen.text = String(sliderGreenValue.value)
-        
-        
-        
-        
     }
 
     @IBAction func sliderRed() {
-        valueRed.text = String(sliderRedValue.value)
+        let roundedValueRed = round(sliderRedValue.value * 100) / 100
+        valueRed.text = String(roundedValueRed)
+        
+        red = CGFloat(sliderRedValue.value)
+        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
 
     @IBAction func sliderGreen() {
-        valueGreen.text = String(sliderGreenValue.value)
+        let roundedValueGreen = round(sliderGreenValue.value * 100) / 100
+        valueGreen.text = String(roundedValueGreen)
+        
+        green = CGFloat(sliderGreenValue.value)
+        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+
     }
     
     @IBAction func sliderBlue() {
-        valueBlue.text = String(sliderBlueValue.value)
-    }
-    
-}
+        let roundedValueBlue = round(sliderBlueValue.value * 100) / 100
+        valueBlue.text = String(roundedValueBlue)
+        
+        blue = CGFloat(sliderBlueValue.value)
+        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
 
+
+    }
+
+}
