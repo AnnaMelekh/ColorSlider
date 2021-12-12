@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     @IBOutlet var sliderGreenValue: UISlider!
     @IBOutlet var sliderBlueValue: UISlider!
     
-    var red: CGFloat = 0.0
-    var green: CGFloat = 0.0
-    var blue: CGFloat = 0.0
+    private var red: CGFloat = 0.0
+    private var green: CGFloat = 0.0
+    private var blue: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
