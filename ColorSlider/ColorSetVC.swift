@@ -29,12 +29,7 @@ class ColorSetVC: UIViewController {
         valueBlue.text = String(sliderBlueValue.value)
         valueGreen.text = String(sliderGreenValue.value)
         
-        colorView.backgroundColor = UIColor(
-            red: CGFloat(sliderRedValue.value),
-            green: CGFloat(sliderGreenValue.value),
-            blue: CGFloat(sliderBlueValue.value),
-            alpha: 1.0
-        )
+        setColor()
     }
 
     @IBAction func sliderRed() {
