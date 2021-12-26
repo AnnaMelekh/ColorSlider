@@ -33,7 +33,7 @@ class ColorSetVC: UIViewController {
             red: CGFloat(sliderRedValue.value),
             green: CGFloat(sliderGreenValue.value),
             blue: CGFloat(sliderBlueValue.value),
-            alpha: 1
+            alpha: 1.0
         )
     }
 
