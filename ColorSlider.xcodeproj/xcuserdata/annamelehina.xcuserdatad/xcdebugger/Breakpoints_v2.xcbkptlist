@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "69B51D43-361E-44B7-9507-230207035F62"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ColorSlider/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ColorSetVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - 6613c07e6a5f570b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.colorView.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - 68c0e933127af33f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.colorView.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - 7db8f62bc19eee0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.colorView.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - e97f3b7cf7848bb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.colorView.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - c71914ff11b71986"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ColorSlider.ViewController"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "4FEAD908-CBA3-42FC-A8DE-B25AD1035EAC - af19d1903a9dcba7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ColorSlider.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ColorSlider.ViewController&gt;"
+                  moduleName = "ColorSlider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annamelehina/Downloads/App/ColorSlider/ColorSlider/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
