@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ColorSetVC: UIViewController {
 
     @IBOutlet var colorView: UIView!
     
@@ -20,45 +20,49 @@ class ViewController: UIViewController {
     @IBOutlet var sliderGreenValue: UISlider!
     @IBOutlet var sliderBlueValue: UISlider!
     
-    private var red: CGFloat = 0.0
-    private var green: CGFloat = 0.0
-    private var blue: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
-        colorView.backgroundColor = .systemGray
         
         valueRed.text = String(sliderRedValue.value)
         valueBlue.text = String(sliderBlueValue.value)
         valueGreen.text = String(sliderGreenValue.value)
+        
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(sliderRedValue.value),
+            green: CGFloat(sliderGreenValue.value),
+            blue: CGFloat(sliderBlueValue.value),
+            alpha: 1.0
+        )
     }
 
     @IBAction func sliderRed() {
         let roundedValueRed = round(sliderRedValue.value * 100) / 100
         valueRed.text = String(roundedValueRed)
-        
-        red = CGFloat(sliderRedValue.value)
-        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        setColor()
     }
 
     @IBAction func sliderGreen() {
         let roundedValueGreen = round(sliderGreenValue.value * 100) / 100
         valueGreen.text = String(roundedValueGreen)
+        setColor()
         
-        green = CGFloat(sliderGreenValue.value)
-        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-
     }
     
     @IBAction func sliderBlue() {
         let roundedValueBlue = round(sliderBlueValue.value * 100) / 100
         valueBlue.text = String(roundedValueBlue)
-        
-        blue = CGFloat(sliderBlueValue.value)
-        colorView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-
-
+        setColor()
     }
 
+    private func setColor() {
+        colorView.backgroundColor = UIColor(
+                          red: CGFloat(sliderRedValue.value),
+                          green: CGFloat(sliderGreenValue.value),
+                          blue: CGFloat(sliderBlueValue.value),
+                          alpha: 1.0
+        )
+    }
 }
+
