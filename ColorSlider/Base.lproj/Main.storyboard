@@ -180,6 +180,9 @@
                                 <state key="normal" title="DONE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIo-iy-kP0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.27685765678377794" blue="0.57454258419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,7 +201,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueTextField" destination="uCk-RQ-oH2" id="CTU-ac-q1x"/>
                         <outlet property="colorView" destination="2dD-7l-Gow" id="KaL-qH-Qcr"/>
+                        <outlet property="greenTextField" destination="6JO-pT-McE" id="Ejd-3x-0di"/>
+                        <outlet property="redTextField" destination="eOj-Xw-14v" id="Zdk-aM-kL9"/>
                         <outlet property="sliderBlueValue" destination="nVZ-Mc-Zng" id="fLK-AF-16r"/>
                         <outlet property="sliderGreenValue" destination="3Se-qc-AWp" id="bkN-An-KK0"/>
                         <outlet property="sliderRedValue" destination="HyQ-ya-bvp" id="q4x-28-cze"/>

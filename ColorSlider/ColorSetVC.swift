@@ -20,10 +20,20 @@ class ColorSetVC: UIViewController {
     @IBOutlet var sliderGreenValue: UISlider!
     @IBOutlet var sliderBlueValue: UISlider!
     
+    @IBOutlet var redTextField: UITextField!
+    @IBOutlet var greenTextField: UITextField!
+    @IBOutlet var blueTextField: UITextField!
+    
+    var delegate: ColorSetVCDelegate!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
+        
+        redTextField.text = String(sliderRedValue.value)
+        greenTextField.text = String(sliderGreenValue.value)
+        blueTextField.text = String(sliderBlueValue.value)
         
         valueRed.text = String(sliderRedValue.value)
         valueBlue.text = String(sliderBlueValue.value)
@@ -51,14 +61,34 @@ class ColorSetVC: UIViewController {
         setColor()
     }
 
+    @IBAction func doneButtonPressed() {
+        delegate.setBackgroundColor (
+            red: CGFloat(sliderRedValue.value),
+            green: CGFloat(sliderRedValue.value),
+            blue: CGFloat(sliderRedValue.value)
+            )
+        dismiss(animated: true)
+        
+    }
+    
     private func setColor() {
         colorView.backgroundColor = UIColor(
-                          red: CGFloat(sliderRedValue.value),
-                          green: CGFloat(sliderGreenValue.value),
-                          blue: CGFloat(sliderBlueValue.value),
-                          alpha: 1.0
-        )
-    }
+            red: CGFloat(sliderRedValue.value),
+            green: CGFloat(sliderGreenValue.value),
+            blue: CGFloat(sliderBlueValue.value),
+            alpha: 1.0
+            )
+        }
 }
-/////
+
+ 
+
+//extension ColorSetVC {
+//    private func showAlert(title: String, message: String) {
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "Ok", style: .default)
+//        alert.addAction(okAction)
+//        present (alert, animated: true)
+//    }
+//}
 
