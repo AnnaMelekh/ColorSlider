@@ -62,11 +62,11 @@ class ColorSetVC: UIViewController {
     }
 
     @IBAction func doneButtonPressed() {
-        delegate.setBackgroundColor (
-            red: CGFloat(sliderRedValue.value),
-            green: CGFloat(sliderRedValue.value),
-            blue: CGFloat(sliderRedValue.value)
-            )
+//        delegate.setBackgroundColor (
+//            red: CGFloat(sliderRedValue.value),
+//            green: CGFloat(sliderRedValue.value),
+//            blue: CGFloat(sliderRedValue.value)
+//            )
         dismiss(animated: true)
         
     }
